@@ -11,11 +11,15 @@ function Card({ project }) {
     <a
       href={project.link || project.github}
       target="_blank"
-      className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-gray-400 will-change-projectCard`}
+      className={`w-full relative rounded-xl border-gray-700 dark:border-gray-400 border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-gray-400 will-change-projectCard`}
     >
-      <img
+      <Image
         className="w-full rounded-md"
         src={project.img}
+        width="150"
+        height="70"
+        priority
+        alt="image projek"
       />
     </a>
     <div className="w-full mt-5 cursor-not-allowed">

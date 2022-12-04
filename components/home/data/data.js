@@ -1,7 +1,7 @@
 const userData = {
     githubUsername: "manuarora700",
     name: "Angga bimantoro",
-    designation: "Front end Developer",
+    designation: "Frontend Developer",
     avatarUrl: "/avatar.png",
     email: "bimantoroa087@gmail.com",
     phone: "+91 9587738861",
@@ -176,7 +176,7 @@ const userData = {
       id: 0,
       title: "WoodenGo",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      img: "/projects/u1.jpg",
+      img: "/projects/p2.jpg",
       link: "/EROR",
       github: "/",
       tags: ["React", "NextJS", "TailwindCSS", "CSS", "Firebase"],

@@ -42,6 +42,7 @@ function Svghero() {
     variants={pathVariants}
     initial="hidden"
     animate="visible"
+    strokeLinecap="round"
    
     d="M130.282 33.7034C85.6205 44.98 51.1183 62.2255 26.7759 85.4399C-87.2514 231.882 357.543 213.272 304.36 72.5058C293.411 54.0355 275.768 39.5336 251.43 29" stroke="#61C5FD" strokeWidth="7" />
   </g>

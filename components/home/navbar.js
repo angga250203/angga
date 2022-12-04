@@ -25,7 +25,7 @@ export default function Navbar() {
               <h1 className="font-semibold text-xl dark:text-gray-100">
                 {userData.name}
               </h1>
-              <p className="text-base font-light text-gray-300 dark:text-gray-300">
+              <p className="text-base font-light text-gray-400 dark:text-gray-300">
                 {userData.designation}
               </p>
         

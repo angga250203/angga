@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Footer() {
   return (
     <footer className="flex bg-gray-300 dark:bg-gray-900 flex-col w-screen px-5 py-3  z-5 ">
@@ -13,6 +14,7 @@ function Footer() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                   width="26"
+                  height="20"
                   title="React"
                 />
                 <span className="sr-only">React</span>
@@ -21,6 +23,7 @@ function Footer() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
                   width="40"
+                  height="20"
                   className="invert"
                   title="NextJS"
                 />
@@ -30,6 +33,7 @@ function Footer() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                   width="26"
+                  height="20"
                   title="TailwindCSS"
                 />
                 <span className="sr-only">TailwindCSS</span>

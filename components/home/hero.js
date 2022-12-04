@@ -1,8 +1,9 @@
 import React from 'react'
-import {motion} from "framer-motion"
+
 import { Link as ScrollLink } from "react-scroll";
 import Svghero from './svghero';
-import Image from 'next/image';
+
+import Iconku from './svg';
 
 function Hero() {
     
@@ -19,14 +20,8 @@ function Hero() {
        </div>
 
         
-      <div className='-mt-16 max-w-xl mx-auto px-7 md:px-32'>
-    
-         <Image
-                src="/hero/g2.svg"
-                width={300}
-                height={260}
-                alt="Github Icon"
-              />
+      <div className='-mt-16 max-w-xl mx-auto  md:px-20'>
+          <Iconku/>
       </div>
 
         <div>
