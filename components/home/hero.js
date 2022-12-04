@@ -3,7 +3,7 @@ import React from 'react'
 import { Link as ScrollLink } from "react-scroll";
 import Svghero from './svghero';
 
-import Iconku from './svg';
+import Iconku1 from './svg';
 
 function Hero() {
     
@@ -21,7 +21,7 @@ function Hero() {
 
         
       <div className='-mt-16 max-w-xl mx-auto  md:px-20'>
-          <Iconku/>
+          <Iconku1/>
       </div>
 
         <div>
