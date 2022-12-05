@@ -1,6 +1,6 @@
 const userData = {
     githubUsername: "manuarora700",
-    name: "Angga bimantoro",
+    name: "Angga Bimantoro",
     designation: "Frontend Developer",
     avatarUrl: "/avatar.png",
     email: "bimantoroa087@gmail.com",
