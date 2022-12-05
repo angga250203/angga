@@ -9,7 +9,7 @@ function Preload() {
         <Loader/>
         </div>
 
-       <div className=' left-1/2 -translate-x-1/2 text-gray-500 absolute bottom-4'>
+       <div className=' left-1/2 -translate-x-1/2 text-gray-500 absolute bottom-12'>
            <h1>Develop By Angga.Dev</h1>
            </div> 
     </div>

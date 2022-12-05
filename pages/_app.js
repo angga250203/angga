@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(()=>{
     id.current = window.setInterval(()=>{
       setTimer((timer)=>timer-1)
-    },4000)
+    },3000)
   },[])
 
   useEffect(()=>{
