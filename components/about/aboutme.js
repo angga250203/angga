@@ -1,33 +1,23 @@
+import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import React from 'react'
-import {motion } from 'framer-motion'
-import {skills} from '../home/data/data'
-import Svgabout from './svgabout'
+import { skills } from '../home/data/data'
 import Ab from './ab'
+import Svgabout from './svgabout'
 
 
 
 function Aboutme() {
-  const pathVariants ={
-    hidden:{
-      opacity:0,
-      pathLength:0
-    },
-    visible:{
-      opacity:1,
-      pathLength:1,
-      transition:{
-        duration:2,
-        ease:"easeInOut",
-        delay:1
-   
-      }
-    }
-  }
+  const { scrollYProgress } = useViewportScroll();
+  const swipe = useTransform(scrollYProgress, [0, 1], [0, -600]);
+
+
   return (
     <section className="bg-gray-50 dark:bg-gray-900 ">
     <div className='md:flex bg-gray-50 dark:bg-gray-900 align-center'>
       <div className="max-w-6xl  flex justify-center md:justify-start mx-auto  h-48 ">
-          <div className='max-w-6xl flex justify-center md:justify-start mx-auto'>
+          <motion.div  style={{
+          swipeY: scrollYProgress
+        }} className='max-w-6xl  flex justify-center md:justify-start mx-auto'>
         <motion.h1 
         initial={{ y:-400 }}
         animate={{ y:0 }}
@@ -51,7 +41,7 @@ function Aboutme() {
          <div className='relative z-10 mt-5 md:mt-16 ml-7  '>
           <Ab/>
         </div>
-      </div>
+      </motion.div>
       
     </div>
     </div>  
@@ -93,10 +83,11 @@ function Aboutme() {
              </a>
              <a href='https://twitter.com/lllllll876qq'>
              <motion.img 
+              
               initial={{ x:-130 }}
               animate={{ x:0 }}
               transition={{ delay:2, duration:1 ,type:'spring'}}
-             className='w-7 cursor-pointer  h-7' src='/medsos/tw.png'></motion.img>
+             className='w-7 cursor-pointer   h-7' src='/medsos/tw.png'></motion.img>
              </a>
              </div>
         </div>
@@ -128,6 +119,7 @@ function Aboutme() {
             >
               <motion.img
                whileHover={{ scale: 1.2, rotate: 360,duration:1 }}
+               whileTap={{ scale: 1.2, rotate: 360,duration:1 }}
               src={item.icon} style={item.style} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}

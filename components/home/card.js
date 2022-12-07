@@ -1,10 +1,47 @@
-import React from 'react'
+import { motion } from "framer-motion";
 import Image from "next/image";
-
+import React from 'react';
 
 function Card({ project }) {
+
+  const projectVariant ={
+    hidden: {
+      y: 150,
+      opacity: 0.5,
+    },
+
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        delay: 0.1,
+        ease: "easeOut",
+      },
+    },
+  }
+
+
+  const imageVariant ={
+    hidden: {
+      scale: 0.7,
+    },
+
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        delay: 0.8,
+        ease: "easeOut",
+      },
+    },
+  }
   return (
-    <div
+    <motion.div
+    initial={`hidden`}
+      whileInView={"visible"}
+      viewport={{ once: true }}
+      variants={projectVariant}
     className="max-w-sm mx-auto cursor-not-allowed flex flex-col projects-center md:projects-start md:justify-center"
     key={project.id}
   >
@@ -13,6 +50,14 @@ function Card({ project }) {
       target="_blank"
       className={`w-full relative rounded-xl border-gray-700 dark:border-gray-400 border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-gray-400 will-change-projectCard`}
     >
+      <motion.div
+       initial={`hidden`}
+       whileInView={"visible"}
+       viewport={{ once: true }}
+       variants={imageVariant}
+      
+      >
+
       <Image
         className="w-full rounded-md"
         src={project.img}
@@ -21,6 +66,7 @@ function Card({ project }) {
         priority
         alt="image projek"
       />
+      </motion.div>
     </a>
     <div className="w-full mt-5 cursor-not-allowed">
       <div className="flex projects-center justify-between">
@@ -64,7 +110,7 @@ function Card({ project }) {
         })}
       </ul>
     </div>
-  </div>
+  </motion.div>
 );
 }
 

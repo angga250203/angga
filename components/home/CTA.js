@@ -54,7 +54,7 @@ function CTA() {
         scale
       }}
       className=" max-w-xs mx-auto mt-16 px-16">
-      <Link href="/projects">
+      <Link href="/contact">
         <motion.p
         style={{
           scaleY: scrollYProgress

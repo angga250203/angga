@@ -20,13 +20,15 @@ function Svgabout() {
       
       fill="none" d="M0 0H333V254H0z"></motion.path>
       <motion.path
+       whileHover={{ }}
       initial={{ x:0 }}
-      animate={{ x:80 }}
+      animate={{ x:80,scale: 0.7 }}
        transition= {{ delay:4, duration:0.9,repeatType:"reverse",repeat:Infinity,repeatDelay:2 }}
+       
       fill="#439FF4" d="M18 15H100V97H18z"></motion.path>
       <motion.path 
       initial={{ y:0 }}
-      animate={{ y:30 }}
+      animate={{ y:30,rotate:90 }}
       transition= {{ delay:5, duration:0.8,repeatType:"reverse",repeat:Infinity,repeatDelay:3 }}
       fill="#058A0A" d="M257 0l53.694 93H203.306L257 0z"></motion.path>
       <motion.circle
