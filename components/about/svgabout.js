@@ -20,7 +20,7 @@ function Svgabout() {
       
       fill="none" d="M0 0H333V254H0z"></motion.path>
       <motion.path
-       whileHover={{ }}
+     
       initial={{ x:0 }}
       animate={{ x:80,scale: 0.7 }}
        transition= {{ delay:4, duration:0.9,repeatType:"reverse",repeat:Infinity,repeatDelay:2 }}

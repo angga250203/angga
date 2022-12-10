@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Svghero from './svghero';
 
 import Iconku1 from './svg';
+import Down from '../animation/down';
 
 function Hero() {
     
@@ -29,19 +30,7 @@ function Hero() {
         </div>
 
        
-        <div className='max-w-sm mx-auto px-20 mt-16 md:mt-6 '>
-        <ScrollLink
-          activeClass="active"
-          to="learnmore"
-          spy={true}
-          offset={-30}
-          smooth={true}
-          duration={500}
-        >
-          <p className=' cursor-pointer border-2 border-blue-500 hover:border-blue-700 transition-all px-5 py-3 rounded-full'>learn more</p>
-        </ScrollLink>
-        </div>
-     
+       
     </div>
     
     </div>

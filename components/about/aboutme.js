@@ -1,9 +1,13 @@
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import React from 'react'
+import Facebook from '../animation/facebook '
+import Tools from '../animation/tools'
 import { skills } from '../home/data/data'
 import Ab from './ab'
 import Svgabout from './svgabout'
-
+import Linked from '../animation/linked'
+import Instagram from '../animation/instagram'
+import Twitter from '../animation/twitter'
 
 
 function Aboutme() {
@@ -57,39 +61,24 @@ function Aboutme() {
             development and web design. The main programming language I'm exploring is Javascript, as well
              as the React framework (and the environment in general). I love learning things, and always want
              to learn new things. I am enthusiastic, reliable, responsible and hardworking person.</p>
-             <div className='flex gap-3  mt-5'>
-               <a href='https://www.instagram.com/angga_bimnn/'>
-             <motion.img
-             initial={{ x:-100 }}
-             animate={{ x:0 }}
-             transition={{ delay:2.3, duration:1 ,type:'spring'}}
+             
+            <div className='flex gap-3 mt-5'>
+            <a href='https://www.facebook.com/angga.bimantoro.9/'className='cursor-pointer'>
+            <Facebook/>  
+            </a>
 
-             className='w-7 cursor-pointer  h-7 ' src='/medsos/ig.png'>
-             </motion.img>
-             </a>
-             <a href='https://www.facebook.com/angga.bimantoro.9/'>
-             <motion.img 
-             initial={{ x:-110 }}
-             animate={{ x:0 }}
-             transition={{ delay:2.2, duration:1 ,type:'spring'}}
-             className='w-7 cursor-pointer  h-7' src='/medsos/fb.png'></motion.img>
-             </a>
-             <a href='https://linkedin.com'>
-             <motion.img 
-             initial={{ x:-120 }}
-             animate={{ x:0 }}
-             transition={{ delay:2.1, duration:1 ,type:'spring'}}
-             className='w-7 cursor-pointer  h-7' src='/medsos/in.png'></motion.img>
-             </a>
-             <a href='https://twitter.com/lllllll876qq'>
-             <motion.img 
-              
-              initial={{ x:-130 }}
-              animate={{ x:0 }}
-              transition={{ delay:2, duration:1 ,type:'spring'}}
-             className='w-7 cursor-pointer   h-7' src='/medsos/tw.png'></motion.img>
-             </a>
+            <a href='https://www.linkedin.com/'className='cursor-pointer'>
+              <Linked/>
+              </a>
+              <a href='https://www.instagram.com/angga_bimnn/'className='cursor-pointer'>
+              <Instagram/>
+        
+              </a>
+              <a href='https://twitter.com/lllllll876qq'className='cursor-pointer'>
+               <Twitter/>
+               </a>
              </div>
+            
         </div>
             
        
@@ -100,14 +89,20 @@ function Aboutme() {
       </div>
       </div>
     
-      <div className="flex flex-col max-w-6xl mb-12 mt-12 px-5 mx-auto md:flex-row justify-between relative">
-   
+       <div className='max-w-6xl mx-auto '>
+         <div className='ml-52 mt-12 overflow-hidden'>
+           <Tools/>
+           </div>   
+       </div>
+
+      <div className="flex flex-col max-w-6xl mb-12  px-5 mx-auto md:flex-row justify-between relative">
+      
       
      
-      <div className="relative  w-full text-center md:text-left  md:max-w-lg mb-10 md:mr-10 md:mb-0 md:w-max mr-0 ">
+      <div className="relative  w-full  md:text-left  md:max-w-lg mb-10 md:mr-10 md:mb-0 md:w-max mr-0 ">
           <h1 className='text-4xl font-bold mb-5'>My skills</h1>
-       <p className='text-xl text-gray-600 dark:text-gray-300' > I got the experience.</p>
-       <p className='text-xl text-gray-600 dark:text-gray-300' > Here is my toolbelt for success.</p>
+       <p className='text-xl text-gray-500 dark:text-gray-300' > I got the experience.</p>
+       <p className='text-xl text-gray-500 dark:text-gray-300' > Here is my toolbelt for success.</p>
       </div>
       <div className="relative max-w-lg w-full  mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
         {skills.map((item, index) => {
@@ -118,8 +113,8 @@ function Aboutme() {
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
               <motion.img
-               whileHover={{ scale: 1.2, rotate: 360,duration:1 }}
-               whileTap={{ scale: 1.2, rotate: 360,duration:1 }}
+               whileHover={{ scale: 1.5}}
+               whileTap={{ scale: 1.2 }}
               src={item.icon} style={item.style} />
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}

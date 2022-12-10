@@ -1,6 +1,10 @@
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
+import Facebook from '../animation/facebook ';
+import Instagram from '../animation/instagram';
+import Linked from '../animation/linked';
+import Twitter from '../animation/twitter';
 import Svgemail from './svgemail';
 
 
@@ -97,9 +101,8 @@ function Contactku() {
 
         </div>
 
-        <div className='w-full md:w-1/2'>
-      <h2 className='text-3xl mt-12 mb-7'>Social</h2>
-
+        <div className='w-full md:w-1/2 relative'>
+      <h2 className='text-3xl mt-12 mb-12 font-semibold text-gray-500'>Visit my social media</h2>
       <div className='mb-5 bg-blue-600 text-white  px-7 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all'>
       <a href='https://www.instagram.com/angga_bimnn/' className='flex items-center '> 
       <img className='w-12 mr-8 ' src='/medsos/ig.png'></img>
@@ -120,6 +123,8 @@ function Contactku() {
       <h3 className='text-xl'>Twiter</h3>
       </a>
       </div>
+      
+      
 
     </div>
     </div>
