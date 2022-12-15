@@ -247,51 +247,63 @@ const userData = {
     {
       title: "HTML",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      des:"Hypertext Markup Language is the standard markup language for documents designed to be displayed in internet browsers.",
     },
     {
       title: "CSS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      des:"Cascading Style Sheets are rules for managing several components in a web so that it will be more structured and uniform",
     },
     {
       title: "Javascript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      des:"JavaScript is a high-level and dynamic programming language.",
     },
     {
       title: "Sass",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      des:"is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.",
     },
     {
       title: "TailwindCSS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      des:"A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
     },
     {
       title: "React",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      des:"React is a JavaScript library used to build component-based interactive user interfaces",
     },
     {
       title: "NextJS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+      des:"Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites.",
       style: { filter: "invert(1)" },
     },
     {
       title: "Typescript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      des:"TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale",
     },
     {
       title: "NodeJS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      des:"Node.js is a runtime environment for JavaScript that is open-source and cross-platform.",
     },
     {
       title: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      des:"is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.",
     },
     {
       title: "Firebase",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      des:"Firebase is a service from Google to provide convenience and even make it easier for application developers to develop their applications.",
     },
     {
       title: "Figma",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      des:"Figma is a cloud-based design tool that is similar to Sketch in functionality and features, but with big differences that make Figma better for team collaboration",
     },
   ];
   

@@ -1,13 +1,10 @@
-import { motion, useViewportScroll, useTransform } from 'framer-motion'
+import { motion, useTransform, useViewportScroll } from 'framer-motion'
 import React from 'react'
-import Facebook from '../animation/facebook '
-import Tools from '../animation/tools'
+import Dod from '../animation/doodle'
 import { skills } from '../home/data/data'
 import Ab from './ab'
+import Skiiill from './skiiill'
 import Svgabout from './svgabout'
-import Linked from '../animation/linked'
-import Instagram from '../animation/instagram'
-import Twitter from '../animation/twitter'
 
 
 function Aboutme() {
@@ -42,69 +39,63 @@ function Aboutme() {
          className='text-5xl md:text-9xl font-bold py-20  cursor-pointer   text-center '>
           .
          </motion.h1>
-         <div className='relative z-10 mt-5 md:mt-16 ml-7  '>
-          <Ab/>
+         <div className='relative z-10 mt-12 md:mt-16 ml-7  '>
+        <Dod/>
         </div>
       </motion.div>
       
     </div>
     </div>  
-      <div className="bg-gray-200 -mt-10 py-2 md:py-12 dark:bg-gray-600">
+   
+      <div className="bg-gray-200 -mt-10 py-12 md:py-12 dark:bg-gray-600" >
         <div className='max-w-6xl mx-auto md:mb-24  px-3 md:px-5 flex flex-wrap'>
           <div className='w-full mt-8   md:w-6/12'>
 
-          <div className='flex items-center mt-24 md:mt-40  justify-between'>
+          <div className='flex items-center  md:mt-40  justify-between'>
            <h3 className='text-3xl font-semibold mb-2'>Hello, </h3>
 
              </div>
-          <p className='md:text-lg text-gray-500 dark:text-gray-200'>My name is Angga Bimantoro, or you can call me Angga. I focus on studying web application 
+          <p className='md:text-lg text-gray-500 dark:text-gray-200  font-poppins'>My name is Angga Bimantoro, or you can call me Angga. I focus on studying web application 
             development and web design. The main programming language I'm exploring is Javascript, as well
              as the React framework (and the environment in general). I love learning things, and always want
              to learn new things. I am enthusiastic, reliable, responsible and hardworking person.</p>
              
-            <div className='flex gap-3 mt-5'>
-            <a href='https://www.facebook.com/angga.bimantoro.9/'className='cursor-pointer'>
-            <Facebook/>  
-            </a>
-
-            <a href='https://www.linkedin.com/'className='cursor-pointer'>
-              <Linked/>
-              </a>
-              <a href='https://www.instagram.com/angga_bimnn/'className='cursor-pointer'>
-              <Instagram/>
-        
-              </a>
-              <a href='https://twitter.com/lllllll876qq'className='cursor-pointer'>
-               <Twitter/>
-               </a>
-             </div>
-            
         </div>
+      
             
        
         <div className='w-full md:w-6/12  mt-12 md:mt-36'>
-         <div className='md:mt-10 mt-12 px-5 md:ml-10 lg:ml-24'>
+         <div className='md:mt-10 mt-12 px-5 lg:ml-20'>
             <Svgabout/>
           </div>
       </div>
       </div>
-    
-       <div className='max-w-6xl mx-auto '>
-         <div className='ml-52 mt-12 overflow-hidden'>
-           <Tools/>
-           </div>   
-       </div>
-
-      <div className="flex flex-col max-w-6xl mb-12  px-5 mx-auto md:flex-row justify-between relative">
-      
-      
-     
-      <div className="relative  w-full  md:text-left  md:max-w-lg mb-10 md:mr-10 md:mb-0 md:w-max mr-0 ">
-          <h1 className='text-4xl font-bold mb-5'>My skills</h1>
-       <p className='text-xl text-gray-500 dark:text-gray-300' > I got the experience.</p>
-       <p className='text-xl text-gray-500 dark:text-gray-300' > Here is my toolbelt for success.</p>
       </div>
-      <div className="relative max-w-lg w-full  mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
+    
+
+      <Skiiill/>
+       
+
+      <div className='max-w-6xl py-24 mx-auto flex flex-wrap '>
+      {skills.map((item, index) => {
+          return (
+        <div 
+        key={index} className='md:w-3/12 w-1/2 px-3 mb-5'>
+          <img className=' w-12 md:w-16' src={item.icon} alt="imhj" />
+          <h3 className='font-semibold text-lg'> {item.title}</h3>
+          <p className='text-sm text-gray-400'>{item.des}</p>
+        </div>
+             );
+            })}
+ 
+  
+        
+      </div>
+
+      
+
+      
+      {/* <div className="relative max-w-6xl w-full flex flex-wrap mx-auto   items-center ">
         {skills.map((item, index) => {
           return (
             <div
@@ -122,9 +113,9 @@ function Aboutme() {
             </div>
           );
         })}
-      </div>
-    </div>
-    </div>
+      </div> */}
+   
+ 
       </section>
   )
 }

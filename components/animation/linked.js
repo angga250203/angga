@@ -2,39 +2,21 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function Linked() {
-    const projectVariant ={
-        hidden: {
-          x: 150,
-          opacity: 0.5,
-        },
     
-        visible: {
-          x: 0,
-          opacity: 1,
-          transition: {
-            duration: 0.4,
-            delay: 0.1,
-            ease: "easeOut",
-          },
-        },
-      }
   return (
     <motion.svg
-    whileHover={{scale:1.2 }}
-    whileTap={{scale:1.1}}
-       
-    initial={`hidden`}
-    whileInView={"visible"}
-    viewport={{ once: true }}
-    variants={projectVariant}
+ 
+    initial={{y:-600}}
+         animate={{y:0}}
+         transition={{delay:2.5, duration:2,type:'spring',stiffness:300,}}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="w-16 h-16  md:w-24 md:h-24"
+      className="w-32 h-32  "
       fill="none"
       viewBox="0 0 184 184"
     >
       
-      <circle cx="92" cy="92" r="92" ></circle>
+      <circle cx="92" cy="92" r="92" fill="#D1D3FC" ></circle>
       <motion.path
        animate={{rotate:180,scale:1}}
        transition= {{ delay:1, duration:2,repeatType:"mirror",repeat:Infinity}}

@@ -28,7 +28,7 @@ function Animasi() {
         bottom: [0, 0, iner],
       }}
       transition={{ ...transition, duration: 2, times: [0, 0.5, 1] }}
-      className="h-screen bg-gray-200 dark:bg-gray-800 w-1/2 absolute z-20"
+      className="h-screen bg-gray-200 dark:bg-gray-800 w-1/2 absolute z-50"
     ></motion.div> 
     <motion.div
       
@@ -42,7 +42,7 @@ function Animasi() {
         top: [0, 0, iner],
       }}
       transition={{ ...transition, duration: 2, times: [0, 0.5, 1] }}
-      className="h-screen bg-gray-300 dark:bg-gray-600 w-1/2 absolute z-20 right-0"
+      className="h-screen bg-gray-300 dark:bg-gray-600 w-1/2 absolute z-50 right-0"
       onAnimationComplete={() => {
         setPanelComplete(!panelComplete)
       }}

@@ -10,7 +10,7 @@ function Accordion() {
 
 
   return (
-    <div  className='max-w-6xl mx-auto px-5  mb-20 md:mb-24 flex flex-wrap'>
+    <div  className='max-w-6xl mx-auto px-5   py-20 mb-20 md:mb-24 flex flex-wrap'>
     <div className='w-full md:w-7/12 ' id='learnmore' >
       <div className='text-3xl md:text-5xl lg:text-6xl font-bold dark:text-white mr-12  leading-relaxed '>
           <AnimatedTextCharacter text="Delivering modern," />

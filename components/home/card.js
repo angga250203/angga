@@ -48,7 +48,7 @@ function Card({ project }) {
     <a
       href={project.link || project.github}
       target="_blank"
-      className={`w-full relative rounded-xl border-gray-700 dark:border-gray-400 border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-gray-400 will-change-projectCard`}
+      className={`w-full relative rounded-xl border-gray-700 dark:border-gray-400 border p-2 cursor-not-allowed  hover:border-gray-400 will-change-projectCard`}
     >
       <motion.div
        initial={`hidden`}
