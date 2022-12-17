@@ -5,7 +5,7 @@ function P2() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-32 md:w-36 lg:w-40"
+      className="w-32 md:w-36 lg:w-40 cursor-pointer"
       fill="none"
       viewBox="0 0 150 146"
     >

@@ -69,19 +69,19 @@ function Menu() {
 
           <motion.li className='flex items-center mb-5 space-x-6 cursor-pointer' variants={variants}>
             <Link href="/about">
-              <p className='text-xl text-gray-500 dark-text-gray-200'>about</p>
+              <p className='text-xl text-gray-500 dark:text-gray-200'>About</p>
             </Link>
           </motion.li>
 
           <motion.li className='flex items-center mb-5 space-x-6 cursor-pointer' variants={variants}>
             <Link href="/projects">
-              <p className='text-xl text-gray-500 dark-text-gray-200'>Project</p>
+              <p className='text-xl text-gray-500 dark:text-gray-200'>Project</p>
             </Link>
           </motion.li>
 
           <motion.li className='flex items-center mb-5 space-x-6 cursor-pointer' variants={variants}>
             <Link href="/contact">
-              <p className='text-xl text-gray-500 dark-text-gray-200'>Contact</p>
+              <p className='text-xl text-gray-500 dark:text-gray-200'>Contact</p>
             </Link>
           </motion.li>
         

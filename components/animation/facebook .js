@@ -6,7 +6,7 @@ function Facebook() {
   return (
     <motion.svg
    
-    initial={{y:-600}}
+    initial={{y:-800}}
          animate={{y:0}}
          transition={{delay:2.8, duration:2,type:'spring',stiffness:300,}}
 

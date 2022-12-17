@@ -58,7 +58,7 @@ function Card({ project }) {
       
       >
 
-      <Image
+      <img
         className="w-full rounded-md"
         src={project.img}
         width="150"

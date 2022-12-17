@@ -6,7 +6,7 @@ function Linked() {
   return (
     <motion.svg
  
-    initial={{y:-600}}
+    initial={{y:-800}}
          animate={{y:0}}
          transition={{delay:2.5, duration:2,type:'spring',stiffness:300,}}
       xmlns="http://www.w3.org/2000/svg"

@@ -1,16 +1,19 @@
-import { motion, useTransform, useViewportScroll } from 'framer-motion'
-import React from 'react'
+import { motion, useTransform, useViewportScroll} from 'framer-motion'
+import React,{useEffect} from 'react'
 import Dod from '../animation/doodle'
 import { skills } from '../home/data/data'
-import Ab from './ab'
 import Skiiill from './skiiill'
 import Svgabout from './svgabout'
+
+
+
 
 
 function Aboutme() {
   const { scrollYProgress } = useViewportScroll();
   const swipe = useTransform(scrollYProgress, [0, 1], [0, -600]);
 
+ 
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900 ">
@@ -74,17 +77,24 @@ function Aboutme() {
     
 
       <Skiiill/>
+    
+      <div id="learnmore" className='max-w-6xl py-12 mx-auto flex px-3 gap-3' >
+        <h3 className='text-4xl font-semibold font-poppins'>My Tool Stack</h3>
        
+      </div>
+      <div   className='max-w-6xl lg:py-16 mx-auto flex flex-wrap '>
 
-      <div className='max-w-6xl py-24 mx-auto flex flex-wrap '>
       {skills.map((item, index) => {
           return (
-        <div 
+        <motion.div 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{delay:1}}
         key={index} className='md:w-3/12 w-1/2 px-3 mb-5'>
           <img className=' w-12 md:w-16' src={item.icon} alt="imhj" />
           <h3 className='font-semibold text-lg'> {item.title}</h3>
           <p className='text-sm text-gray-400'>{item.des}</p>
-        </div>
+        </motion.div>
              );
             })}
  
@@ -95,26 +105,7 @@ function Aboutme() {
       
 
       
-      {/* <div className="relative max-w-6xl w-full flex flex-wrap mx-auto   items-center ">
-        {skills.map((item, index) => {
-          return (
-            <div
-              title={item.title}
-              key={index}
-              className="w-10 mx-auto flex items-center flex-col justify-center"
-            >
-              <motion.img
-               whileHover={{ scale: 1.5}}
-               whileTap={{ scale: 1.2 }}
-              src={item.icon} style={item.style} />
-              <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
-                {item.title}
-              </p>
-            </div>
-          );
-        })}
-      </div> */}
-   
+      
  
       </section>
   )
