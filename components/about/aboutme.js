@@ -90,6 +90,7 @@ function Aboutme() {
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{delay:1}}
+        viewport={{ once: true }}
         key={index} className='md:w-3/12 w-1/2 px-3 mb-5'>
           <img className=' w-12 md:w-16' src={item.icon} alt="imhj" />
           <h3 className='font-semibold text-lg'> {item.title}</h3>
