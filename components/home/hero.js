@@ -14,7 +14,7 @@ function Hero() {
     
      
   return (
-    <div className='max-w-6xl mb-36 md:mb-24 mx-auto px-4 py-10  '>
+    <div className='max-w-6xl mb-36 md:mb-24 mx-auto px-4 py-10 mt-12 md:mt-0  '>
     <div className='text-center relative '>
         <h2 className='text-3xl md:text-6xl  font-semibold text-gray-500 dark:text-gray-400'>UX/UI designer,</h2>
         <h1 className='text-4xl md:text-7xl font-bold text-gray-700 dark:text-gray-200'>Frontend developer</h1>

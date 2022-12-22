@@ -10,9 +10,9 @@ import Link from "next/link";
 
 function Skiiill() {
   return (
-    <div className='flex flex-wrap max-w-6xl py-36 mb-64  px-3 relative mx-auto'>
+    <div className='flex flex-wrap max-w-6xl py-36 mb-64 md:mb-16  px-3 relative mx-auto'>
         <div className='w-full md:w-7/12 '>
-            <div className='text-2xl  md:text-3xl lg:text-5xl font-poppins font-semibold'>
+            <div className='text-2xl  md:text-3xl lg:text-5xl font-poppins font-bold'>
         <AnimatedTextCharacter text="My development stack is" />
           <AnimatedTextCharacter1 text="focused on performance &" />
           <AnimatedTextCharacter1 text="accessibility with delightful" />

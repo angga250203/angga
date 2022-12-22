@@ -2,6 +2,7 @@ import { motion, useTransform, useViewportScroll} from 'framer-motion'
 import React,{useEffect} from 'react'
 import Dod from '../animation/doodle'
 import { skills } from '../home/data/data'
+import Animationskill from './animationskill'
 import Skiiill from './skiiill'
 import Svgabout from './svgabout'
 
@@ -79,7 +80,7 @@ function Aboutme() {
       <Skiiill/>
     
       <div id="learnmore" className='max-w-6xl py-12 mx-auto flex px-3 gap-3' >
-        <h3 className='text-4xl font-semibold font-poppins'>My Tool Stack</h3>
+       <Animationskill/>
        
       </div>
       <div   className='max-w-6xl lg:py-16 mx-auto flex flex-wrap '>
