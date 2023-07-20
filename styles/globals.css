@@ -20,7 +20,7 @@
 
 @layer components {
   .background {
-    @apply bg-white dark:bg-gray-400 absolute top-0  right-0 bottom-0 w-[300px] ;
+    @apply  ;
   }
   .icon-placeholder {
     @apply w-[45px] h-[45px] rounded-full;

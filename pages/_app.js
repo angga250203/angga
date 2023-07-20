@@ -29,9 +29,9 @@ function MyApp({ Component, pageProps }) {
   return (
   
   <ThemeProvider defaultTheme="light" attribute="class">
-     {preloader? <Preload/>:
+      {preloader? <Preload/>:
       <Component {...pageProps} />
-  }
+}
     </ThemeProvider>
   )
 }

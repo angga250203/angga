@@ -12,7 +12,7 @@ function Navi({ toggle }) {
         }
       };
   return (
-    <motion.ul className='z-40 p-5 absolute top-[100px] w-[260px]' variants={variants} onClick={toggle}>
+    <motion.ul className='z-40 p-5 absolute top-[100px] -left-16' variants={variants} onClick={toggle}>
   
       <Menu />
     
